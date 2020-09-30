@@ -15,6 +15,8 @@ def display_board(board)
 
 end
 
+
+
 def valid_move?(board, index)
   position = position_taken?(board, index) 
   
