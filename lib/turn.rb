@@ -29,6 +29,8 @@ def valid_move?(board, index)
   
 end
 
+
+
 def position_taken?(board, index)
   
   if board[index] == " " || board[index] == "" || board[index] == nil
@@ -38,6 +40,8 @@ def position_taken?(board, index)
  end
 end
 
+
+
 def input_to_index(user_input)
   puts user_input.to_i - 1
   user_input.to_i - 1
@@ -46,6 +50,8 @@ end
 def move(board, index, character = "X")
   board[index] = character
 end
+
+
 
 def turn(board)
   puts "Please enter 1-9:"
@@ -61,3 +67,5 @@ def turn(board)
     turn(board)
  end
 end
+
+
