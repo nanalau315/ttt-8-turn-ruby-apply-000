@@ -12,7 +12,6 @@ def display_board(board)
 " #{board[3]} | #{board[4]} | #{board[5]} "
 "-----------"
 " #{board[6]} | #{board[7]} | #{board[8]} "
-
 end
 
 
@@ -21,12 +20,11 @@ def valid_move?(board, index)
   position = position_taken?(board, index) 
   
   if position == false && index.between?(0, 8)
-    return true
+    true
     
   else
-    return false
+    false
   end
-  
 end
 
 
@@ -34,9 +32,9 @@ end
 def position_taken?(board, index)
   
   if board[index] == " " || board[index] == "" || board[index] == nil
-    return false
+    false
   else
-    return true
+    true
  end
 end
 
