@@ -36,9 +36,9 @@ def position_taken? (board, index)
  end
 end
 
-def input_to_index(index)
-  puts index.to_i - 1
-  index.to_i - 1
+def input_to_index(user_input)
+  puts user_input.to_i - 1
+  user_input.to_i - 1
 end
 
 def move(board, index, character = "X")
@@ -48,9 +48,9 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   
-  index = gets.strip
+  user_input = gets.strip
   
-  input_to_index(index)
+  index = input_to_index(user_input)
   
   
   
