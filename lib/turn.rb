@@ -15,7 +15,7 @@ def display_board(board)
 
 end
 
-def valid_move? (board, index)
+def valid_move?(board, index)
   position = position_taken?(board, index) 
   
   if position == false && index.between?(0, 8)
@@ -52,7 +52,7 @@ def turn(board)
   
   index = input_to_index(user_input)
   
-  if valid_move? (board, index) == true
+  if valid_move?(board, index) == true
     move(board, index, character = "X")
     display_board(board)
   
