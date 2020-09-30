@@ -55,7 +55,8 @@ def turn(board)
   if index.between?(0, 8) && position_taken? (board, index)
     move(board, index, character = "X")
   
-  else turn(board)
+  else 
+    turn(board)
  end
 end
 
