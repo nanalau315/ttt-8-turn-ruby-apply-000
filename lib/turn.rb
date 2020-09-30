@@ -60,25 +60,3 @@ def turn(board)
     turn(board)
  end
 end
-
-
-
-#
-  
-#valid_move?(board, index)
-  
-  
-  # if  == true
-    #  move(board, index, character = "X")
-    #  display_board(board)
-  
-  #else
-    # turn(board)
-    
-    
-  #end
-
-
-
-
-
